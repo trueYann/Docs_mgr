@@ -1,3 +1,3 @@
-docs_mgr_fe/node_modules
-docs_mgr_be/node_modules
-docs_mgr_be/public
+book-mgr-fe/node_modules
+book-mgr-be/node_modules
+book-mgr-be/public
