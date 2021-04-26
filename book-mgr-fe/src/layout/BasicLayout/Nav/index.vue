@@ -5,22 +5,17 @@
       v-model:openKeys="openKeys"
       v-model:selectedKeys="selectedKeys"
       mode="inline"
-      v-for="(item) in menu"
+      v-for="item in menu"
       :key="item.url"
       v-only-admin="item.onlyAdmin"
     >
-      <a-sub-menu
-        v-if="item.children"
-        :key="item.title"
-      >
+      <a-sub-menu v-if="item.children" :key="item.title">
         <template #title>
-          <span><MailOutlined /><span>{{ item.title }}</span></span>
+          <span
+            ><MailOutlined /><span>{{ item.title }}</span></span
+          >
         </template>
-        <a-menu-item
-          @click="to(child.url)"
-          v-for="(child) in item.children"
-          :key="child.url"
-        >
+        <a-menu-item @click="to(child.url)" v-for="child in item.children" :key="child.url">
           {{ child.title }}
         </a-menu-item>
       </a-sub-menu>

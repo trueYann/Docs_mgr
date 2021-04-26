@@ -23,7 +23,6 @@
           <div>
             <a-button
               @click="show = true"
-              v-only-admin
             >
               添加一条
             </a-button>

@@ -24,6 +24,7 @@
             <a-button
               size="small"
               @click="updateTitle(record)"
+              v-only-admin
             >
               修改
             </a-button>
@@ -32,6 +33,7 @@
               size="small"
               @click="remove(record)"
               type="danger"
+              v-only-admin
             >
               删除
             </a-button>

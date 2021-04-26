@@ -25,10 +25,6 @@ export default defineComponent({
         title: `${_.KEYWORD}名`,
         dataIndex: 'name',
       },
-      // {
-      //   title: '保质期',
-      //   dataIndex: 'expirationDate',
-      // },
       {
         title: '页码',
         dataIndex: 'price',

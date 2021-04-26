@@ -3,8 +3,6 @@ const TopicMgr = {
   name: String,
   // 页码
   price: Number,
-  // // 保质期
-  // expirationDate: Number,
   // 归档日期
   producedDate: Number,
   // 分类

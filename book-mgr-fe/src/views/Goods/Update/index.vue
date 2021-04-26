@@ -13,9 +13,6 @@
         <a-form-item label="页码">
           <a-input-number v-model:value="editForm.price" :min="0" :max="99999999999" />
         </a-form-item>
-        <!-- <a-form-item label="保质期">
-          <a-input v-model:value="editForm.expirationDate" />
-        </a-form-item> -->
         <a-form-item label="归档日期">
           <a-date-picker v-model:value="editForm.producedDate" />
         </a-form-item>

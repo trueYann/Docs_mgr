@@ -18,10 +18,6 @@
             <div class="title">页码</div>
             <div class="content">{{ d.price }}</div>
           </div>
-          <!-- <div class="item">
-            <div class="title">保质期</div>
-            <div class="content">{{ d.expirationDate }}</div>
-          </div> -->
           <div class="item">
             <div class="title">分类</div>
             <div class="content">{{ getClassifyTitleById(d.classify) }}</div>

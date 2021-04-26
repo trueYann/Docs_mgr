@@ -23,7 +23,7 @@ export default [
   },
   {
     title: '杂项',
-    onlyAdmin: false,
+    onlyAdmin: true,
     children: [
       {
         title: `${_.KEYWORD}分类管理`,

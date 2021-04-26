@@ -4,7 +4,7 @@
       <div>
         <a-input-number v-model:value="count" :min="1" :max="10000" />
         &nbsp;
-        <a-button type="primary" @click="add">添加</a-button>
+        <a-button type="primary" @click="add" v-only-admin>添加</a-button>
       </div>
 
       <a-divider />
