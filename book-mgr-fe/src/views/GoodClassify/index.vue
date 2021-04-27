@@ -6,6 +6,7 @@
           v-model:value="title"
           :placeholder="$$.PAGE_META.CLASSIFY.ADD_FORM_INPUT_PLACEHOLDER"
           style="width: 200px;"
+          @pressEnter="add"
         />
         &nbsp;
         <a-button @click="add" type="primary">添加</a-button>

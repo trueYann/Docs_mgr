@@ -2,12 +2,12 @@
   <div class="auth">
     <div class="bg"></div>
     <div class="title-info">
-      <img src="http://pic.gerenjianli.com/xiaohui2046/b391.jpg" alt="">
-      <h2 class="title">{{ $$.SITE_NAME }} 后台</h2>
+      <img src="http://pic.gerenjianli.com/xiaohui2046/b391.jpg" alt="" />
+      <h2 class="title">{{ $$.SITE_NAME }}</h2>
     </div>
 
     <div class="form">
-      <a-tabs>
+      <a-tabs size="large">
         <a-tab-pane key="1" tab="登入">
           <div class="item">
             <a-input
@@ -15,26 +15,23 @@
               placeholder="账户"
               v-model:value="loginForm.account"
             >
-              <template
-                v-slot:prefix
-              >
+              <template v-slot:prefix>
                 <UserOutlined />
               </template>
             </a-input>
           </div>
 
           <div class="item">
-            <a-input
+            <a-input-password
               size="large"
               placeholder="密码"
               v-model:value="loginForm.password"
+              @pressEnter="login"
             >
-              <template
-                v-slot:prefix
-              >
+              <template v-slot:prefix>
                 <LockOutlined />
               </template>
-            </a-input>
+            </a-input-password>
           </div>
 
           <div class="item">
@@ -42,11 +39,7 @@
           </div>
 
           <div class="item">
-            <a-button
-              size="large"
-              type="primary"
-              @click="login"
-            >
+            <a-button size="large" type="primary" @click="login">
               登入
             </a-button>
           </div>
@@ -58,9 +51,7 @@
               placeholder="账户"
               v-model:value="regForm.account"
             >
-              <template
-                v-slot:prefix
-              >
+              <template v-slot:prefix>
                 <UserOutlined />
               </template>
             </a-input>
@@ -72,9 +63,7 @@
               placeholder="密码"
               v-model:value="regForm.password"
             >
-              <template
-                v-slot:prefix
-              >
+              <template v-slot:prefix>
                 <LockOutlined />
               </template>
             </a-input>
@@ -86,20 +75,14 @@
               placeholder="邀请码"
               v-model:value="regForm.inviteCode"
             >
-              <template
-                v-slot:prefix
-              >
+              <template v-slot:prefix>
                 <MailOutlined />
               </template>
             </a-input>
           </div>
 
           <div class="item">
-            <a-button
-              @click="register"
-              size="large"
-              type="primary"
-            >
+            <a-button @click="register" size="large" type="primary">
               注册
             </a-button>
           </div>
@@ -112,5 +95,5 @@
 <script src="./index.jsx"></script>
 
 <style lang="scss" scpoed>
-  @import './index.scss';
+@import './index.scss';
 </style>
