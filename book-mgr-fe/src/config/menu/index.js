@@ -31,7 +31,7 @@ export default [
         onlyAdmin: true,
       },
       {
-        title: '重制密码列表',
+        title: '重置密码列表',
         url: '/reset/password',
         onlyAdmin: true,
       },

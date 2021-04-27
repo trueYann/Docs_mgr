@@ -1,29 +1,36 @@
-import { createApp } from 'vue';
-import App from './App.vue';
-import router from './router';
-import store from './store';
-import Antd from 'ant-design-vue';
-import SpaceBetween from './components/SpaceBetween/index.vue';
-import FlexEnd from './components/FlexEnd/index.vue';
-import { regDirectives } from '@/helpers/directive';
-import _ from '@/config/common';
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
+import store from './store'
+import Antd from 'ant-design-vue'
+import SpaceBetween from './components/SpaceBetween/index.vue'
+import FlexEnd from './components/FlexEnd/index.vue'
+import { regDirectives } from '@/helpers/directive'
+import _ from '@/config/common'
 
-import 'ant-design-vue/dist/antd.css';
+import 'ant-design-vue/dist/antd.css'
 
-const app = createApp(App);
+const app = createApp(App)
 
-regDirectives(app);
+regDirectives(app)
 
 Object.defineProperty(app.config.globalProperties, '$$', {
   get() {
-    return _;
+    return _
   },
-});
+})
 
+router.beforeEach((to, from, next) => {
+  /* 路由发生变化修改页面title */
+  if (to.meta.title) {
+    document.title = to.meta.title
+  }
+  next()
+})
 app
   .use(store)
   .use(router)
   .use(Antd)
   .component('space-between', SpaceBetween)
   .component('flex-end', FlexEnd)
-  .mount('#app');
+  .mount('#app')
