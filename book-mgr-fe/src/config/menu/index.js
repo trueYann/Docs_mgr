@@ -1,4 +1,4 @@
-import _ from '../common';
+import _ from '../common'
 
 export default [
   {
@@ -7,22 +7,12 @@ export default [
     onlyAdmin: true,
   },
   {
-    title: `${_.KEYWORD}管理`,
+    title: '病人信息',
     url: '/goods',
     onlyAdmin: false,
   },
   {
-    title: '用户管理',
-    url: '/user',
-    onlyAdmin: true,
-  },
-  {
-    title: '操作日志',
-    url: '/log',
-    onlyAdmin: true,
-  },
-  {
-    title: '杂项',
+    title: '科研管理',
     onlyAdmin: true,
     children: [
       {
@@ -43,8 +33,19 @@ export default [
     ],
   },
   {
+    title: '用户管理',
+    url: '/user',
+    onlyAdmin: true,
+  },
+  {
+    title: '操作日志',
+    url: '/log',
+    onlyAdmin: true,
+  },
+
+  {
     title: '个人设置',
     url: '/profile',
     onlyAdmin: false,
   },
-];
+]

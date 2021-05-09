@@ -3,9 +3,9 @@ import { reactive } from 'vue';
 export default reactive({
   BASE_INFO: {
     LEFT: {
-      TITLE: '文档数量',
+      TITLE: '信息数量',
       CONTENT(count) {
-        return `共 ${count} 样`;
+        return `共 ${count} 条`;
       },
     },
     CENTER: {
@@ -23,7 +23,7 @@ export default reactive({
   },
 
   RECENT: {
-    LEFT_TITLE: '最近添加的文档',
+    LEFT_TITLE: '最近添加的信息',
     RIGHT_TITLE: '最近的操作日志',
   },
 });

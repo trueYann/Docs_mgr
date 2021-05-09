@@ -2,7 +2,7 @@
   <div class="auth">
     <div class="bg"></div>
     <div class="title-info">
-      <img src="http://pic.gerenjianli.com/xiaohui2046/b391.jpg" alt="" />
+      <img src="https://www.xwhosp.com.cn/Content/Areas/Common/images/logo/wxShare.jpg" alt="" />
       <h2 class="title">{{ $$.SITE_NAME }}</h2>
     </div>
 

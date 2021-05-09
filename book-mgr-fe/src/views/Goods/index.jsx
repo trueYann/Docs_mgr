@@ -22,28 +22,28 @@ export default defineComponent({
 
     const columns = [
       {
-        title: `${_.KEYWORD}名`,
+        title: `${_.KEYWORD}姓名`,
         dataIndex: 'name',
       },
       {
-        title: '页码',
+        title: '年龄',
         dataIndex: 'price',
       },
       {
-        title: '库存',
+        title: '住院号',
         slots: {
           customRender: 'count',
         },
       },
       {
-        title: '归档日期',
+        title: '入院日期',
         dataIndex: 'producedDate',
         slots: {
           customRender: 'producedDate',
         },
       },
       {
-        title: '分类',
+        title: '科别',
         slots: {
           customRender: 'classify',
         },

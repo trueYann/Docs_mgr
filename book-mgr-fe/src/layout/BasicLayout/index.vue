@@ -2,7 +2,7 @@
   <div class="basic-layout">
     <div class="app-header">
       <div class="left">
-        <img src="http://pic.gerenjianli.com/xiaohui2046/b391.jpg" alt="">
+        <img src="https://www.xwhosp.com.cn/Content/Areas/Common/images/logo/wxShare.jpg" alt="">
         <div class="title">{{ $$.SITE_NAME }}</div>
       </div>
       <div class="right">

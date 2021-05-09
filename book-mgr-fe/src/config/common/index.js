@@ -4,9 +4,9 @@ import CLASSIFY from './Pages/Classify';
 import TOPIC_MGR from './Pages/TopicMgr';
 
 export default reactive({
-  SITE_NAME: '南邮文档管理系统',
+  SITE_NAME: '病人信息管理系统',
 
-  KEYWORD: '文档',
+  KEYWORD: '病人',
 
   PAGE_META: {
     DASHBOARD,
